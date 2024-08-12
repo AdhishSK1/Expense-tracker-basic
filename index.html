@@ -1,0 +1,39 @@
+<!-- Bootstrap Link -->
+
+<!-- Expense Tracker Form -->
+<div class="container mt-5">
+    <form id="expense-form">
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" class="form-control" id="amount" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" required>
+        </div>
+        <div class="form-group">
+            <label for="category">Category</label>
+            <select class="form-control" id="category">
+                <option>Movies</option>
+                <option>Groceries</option>
+                <option>Utilities</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Expense</button>
+    </form>
+</div>
+
+<!-- Expense List -->
+<div class="container mt-5">
+    <ul id="expense-list" class="list-group">
+        <!-- List items will be added dynamically -->
+    </ul>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Expense Tracker JS -->
+   <script src="script.js"></script>
